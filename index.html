@@ -159,22 +159,20 @@
 <section id="three">
   <h2>Get In Touch</h2>
   <p>I’m currently open to new opportunities. Let’s connect!</p>
-  <div class="row">
+
+  <div class="row" style="display: flex; flex-wrap: wrap; gap: 2rem;">
     <!-- Formulario -->
-    <div class="col-8 col-12-small">
+    <div class="col-12 col-md-7" style="flex: 1 1 60%;">
       <form method="post" action="#">
         <div class="row gtr-uniform gtr-50">
           <div class="col-6 col-12-xsmall">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Your name" />
+            <input type="text" name="name" id="name" placeholder="Name" />
           </div>
           <div class="col-6 col-12-xsmall">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Your email" />
+            <input type="email" name="email" id="email" placeholder="Email" />
           </div>
           <div class="col-12">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" placeholder="Write your message here" rows="4"></textarea>
+            <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
           </div>
           <div class="col-12">
             <ul class="actions">
@@ -185,8 +183,8 @@
       </form>
     </div>
 
-    <!-- Información de contacto -->
-    <div class="col-4 col-12-small">
+    <!-- Datos de contacto -->
+    <div class="col-12 col-md-4" style="flex: 1 1 35%;">
       <ul class="labeled-icons">
         <li>
           <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
@@ -208,6 +206,9 @@
     </div>
   </div>
 </section>
+
+ 
+
 
 
 
