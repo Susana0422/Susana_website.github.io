@@ -4,106 +4,52 @@
     <title>Susana Madrid - Data Analyst Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <!-- Iconos -->
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8faff;
-            color: #333;
+        /* Espaciado general entre secciones */
+        section {
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
 
-        /* Títulos */
-        h1, h2, h3 {
-            color: #1e3a8a;
+        /* Ajuste del header */
+        #header {
+            margin-bottom: 40px;
+            text-align: center;
         }
 
-        /* Links */
-        a {
-            color: #2563eb;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        a:hover {
-            color: #1d4ed8;
-        }
-
-        /* Foto de perfil */
+        /* Imagen de perfil */
         .image.avatar img {
             border-radius: 50%;
             width: 200px;
             height: 200px;
             object-fit: cover;
-            border: 4px solid #2563eb;
-            box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
             margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-        .image.avatar img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Botones */
-        .button {
-            background-color: #2563eb;
-            color: white !important;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-        .button:hover {
-            background-color: #1e40af;
-            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
         }
 
         /* Skills */
         #skills {
             padding: 40px 0;
-            background-color: white;
-            border-radius: 10px;
-            margin: 40px auto;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        #skills div {
-            text-align: center;
-            width: 200px;
-        }
-        #skills div:hover {
-            transform: scale(1.05);
-            transition: 0.3s;
         }
 
-        /* Portafolio */
-        .work-item {
-            margin-bottom: 30px;
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: 0.3s;
-        }
+        /* Portafolio imágenes */
         .work-item img {
             max-height: 200px;
             object-fit: cover;
-            transition: transform 0.3s ease;
         }
-        .work-item:hover img {
-            transform: scale(1.05);
-        }
-        .work-item:hover {
-            box-shadow: 0 5px 20px rgba(37, 99, 235, 0.2);
+
+        .image.fit {
+            display: block;
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body class="is-preload">
 
-<!-- Iconos de contacto -->
+<!-- Contact Icons Top Right -->
 <div style="position: absolute; top: 20px; right: 30px;">
   <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 15px;">
     <li>
@@ -123,14 +69,14 @@
 
 <!-- Header -->
 <header id="header">
-  <div class="inner" style="text-align: center;">
+  <div class="inner">
     <a href="#" class="image avatar">
       <img src="images/Foto_Susana.jpg" alt="Foto de Susana" />
     </a>
     <h1>
       <strong>Hi, I'm Susana Madrid</strong><br>
       A passionate <strong>Data Analyst</strong> focused on turning data into decisions.<br>
-      <span style="font-size: 0.9em; color: #666;">Welcome to my portfolio!</span>
+      <span style="font-size: 0.9em; color: #cccccc;">Welcome to my portfolio!</span>
     </h1>
   </div>
 </header>
@@ -138,9 +84,10 @@
 <!-- Main -->
 <div id="main">
 
+<!-- Quote -->
 <section id="quote" class="wrapper">
   <div class="inner" style="text-align: right; margin-bottom: 2rem;">
-    <blockquote style="font-style: italic; color: #444; font-size: 1.1em;">
+    <blockquote style="font-style: italic; color: #555; font-size: 1.1em;">
       "Don't worry about failures, worry about the chances you miss when you don't even try."<br>
       <span style="font-weight: bold;">– Jack Canfield</span>
     </blockquote>
@@ -149,13 +96,10 @@
 
 <!-- About -->
 <section id="one">
-  <header class="major">
-    <h2>About me</h2>
-  </header>
-  <p>I’m a Finance and International Business professional with a double degree in Economics and nearly three years of experience as a Junior Reviewer at a customs agency. Over the years, I’ve developed a deep interest in how data reveals patterns, supports decisions, and tells meaningful stories—especially within the context of global trade. That curiosity led me to take a new direction: I’m currently transitioning into the field of data science, actively studying and building skills in Python, SQL, Excel, and Tableau. I’m passionate about turning raw data into insights that drive action. My goal is to combine my background in economics and finance with the power of data to solve real-world business problems. This portfolio reflects that journey—where analytical thinking, continuous learning, and real-world impact come together.</p>
-  <ul class="actions">
-    <li><a href="#" class="button">Learn More</a></li>
-  </ul>
+    <header class="major">
+        <h2>About me</h2>
+    </header>
+    <p>I’m a Finance and International Business professional with a double degree in Economics and nearly three years of experience as a Junior Reviewer at a customs agency. Over the years, I’ve developed a deep interest in how data reveals patterns, supports decisions, and tells meaningful stories—especially within the context of global trade. That curiosity led me to take a new direction: I’m currently transitioning into the field of data science, actively studying and building skills in Python, SQL, Excel, and Tableau. I’m passionate about turning raw data into insights that drive action. My goal is to combine my background in economics and finance with the power of data to solve real-world business problems. This portfolio reflects that journey—where analytical thinking, continuous learning, and real-world impact come together.</p>
 </section>
 
 <!-- Skills -->
@@ -163,14 +107,86 @@
   <div class="inner">
     <h2 style="text-align: center;">Skills</h2>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; padding-top: 1rem;">
-      <div>
+      
+      <div style="text-align: center; width: 200px;">
         <span class="icon brands fa-python" style="font-size: 2.5em; color: #f7c340;"></span>
         <h3>Python</h3>
-        <p>EDA, pandas, seaborn, matplotlib</p>
+        <p style="font-size: 0.9em;">EDA, pandas, seaborn, matplotlib</p>
       </div>
-      <div>
-        <span class="
 
+      <div style="text-align: center; width: 200px;">
+        <span class="icon solid fa-database" style="font-size: 2.5em; color: #4f8cc9;"></span>
+        <h3>SQL</h3>
+        <p style="font-size: 0.9em;">Queries, joins, filtering, analysis</p>
+      </div>
+
+      <div style="text-align: center; width: 200px;">
+        <span class="icon solid fa-table" style="font-size: 2.5em; color: #21b573;"></span>
+        <h3>Excel</h3>
+        <p style="font-size: 0.9em;">Formulas, dashboards, pivot tables</p>
+      </div>
+
+      <div style="text-align: center; width: 200px;">
+        <span class="icon solid fa-chart-bar" style="font-size: 2.5em; color: #ff7043;"></span>
+        <h3>Tableau</h3>
+        <p style="font-size: 0.9em;">Interactive dashboards, insights</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="two">
+    <h2>Portfolio</h2>
+    <div class="row">
+
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="https://github.com/Susana0422/An-lisis-de-mercado-para-el-sector-videojuegos" target="_blank">
+                <img src="images/thumbs/videogames.jpg" alt="Market analysis" class="image fit" />
+            </a>
+            <h3>Market Analysis for the Video Game Sector</h3>
+            <p>Analyzed a dataset of the video game market for the ICE store (1980-2016).</p>
+        </article>
+
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="https://github.com/Susana0422/An-lisis-Exploratorio-Empresa-Showz" target="_blank">
+                <img src="images/thumbs/tickets.jpg" alt="Showz Ticket Analysis" class="image fit" />
+            </a>
+            <h3>Exploratory Analysis – Showz Company</h3>
+            <p>Identified purchasing patterns and customer segmentation to improve marketing strategies.</p>
+        </article>
+
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="https://github.com/Susana0422/SQL_Coronavirus" target="_blank">
+                <img src="images/thumbs/coronavirus.jpg" alt="COVID-19 Analysis" class="image fit" />
+            </a>
+            <h3>Exploratory Analysis in SQL</h3>
+            <p>SQL queries and analysis of COVID-19 dataset.</p>
+        </article>
+
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="https://github.com/Susana0422/Prueba-A-B" target="_blank">
+                <img src="images/thumbs/descarga.jpg" alt="A/B Testing Project" class="image fit" />
+            </a>
+            <h3>A/B Testing</h3>
+            <p>Data cleaning, EDA, and hypothesis testing for a start-up food company.</p>
+        </article>
+
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="https://github.com/Susana0422/New-York-City-Airbnb-Market" target="_blank">
+                <img src="images/thumbs/new_york.jpg" alt="New-York-City-Airbnb-Market" class="image fit" />
+            </a>
+            <h3>New York City Airbnb Market</h3>
+            <p>EDA on Airbnb dataset, including cleaning, preprocessing, and insights extraction.</p>
+        </article>
+
+    </div>
+</section>
+
+</div>
+</body>
+</html>
 
 
 
