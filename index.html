@@ -22,20 +22,26 @@
     padding: 40px 0;
 }
 
- /* Imagen de perfil centrada */
+/* Contenedor del avatar */
 .image.avatar {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra horizontal */
+    align-items: center;     /* Centra vertical si hay altura definida */
+    width: 100%;
+    margin: 0 auto;          /* Centrado adicional */
+    padding: 0;
 }
 
+/* Imagen centrada y con borde */
 .image.avatar img {
+    display: block;
+    margin: 0 auto;          /* Esto asegura que el img se centre incluso sin flex */
     border-radius: 50%;
     width: 200px;
     height: 200px;
     object-fit: cover;
+    border: 5px solid white;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    margin-bottom: 20px;
 }
         /* Skills */
         #skills {
@@ -201,6 +207,7 @@
 </div>
 </body>
 </html>
+
 
 
 
